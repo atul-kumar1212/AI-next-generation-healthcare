@@ -21,7 +21,7 @@ const About = () => {
         </Typography>
 
         <Typography sx={{ mx: 2, p: 2, textAlign: "center" }} variant="h6">
-          10+ Years Of Experience in Medical Services
+          5+ Years Of Experience in Medical Services
         </Typography>
 
         <Typography
@@ -48,11 +48,11 @@ const About = () => {
           experience. Share your suggestions about writing hospital reviews in
           the comments below or message us on LINKEDIN{" "}
           <a
-            href="https://www.linkedin.com/in/akshay72/"
+            href="https://www.linkedin.com/in/atul-kumar-12a0aa257/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong> @Akshay</strong>
+            <strong>@Atul</strong>
           </a>
           .
           <br />

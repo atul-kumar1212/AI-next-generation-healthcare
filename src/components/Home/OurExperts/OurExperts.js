@@ -14,19 +14,73 @@ import { HashLink } from "react-router-hash-link";
 import useDocData from "../../../Hooks/useDocData";
 
 const OurExperts = () => {
-  const [ourExperts, setOurExperts] = useState([]);
-  const mainData = useDocData();
-  let experts = mainData[0];
-
-  // handle undifined problem in mapping data
-  useEffect(() => {
-    if (experts.length > 1) {
-      const serv = experts?.slice(0, 3);
-      setOurExperts(serv);
-    } else {
-      <LinearProgress color="secondary" />;
+  // Hardcoded doctors data
+  const doctorsData = [
+    {
+      doc_id: 1,
+      name: "Lee S. Williamson",
+      specialize: "Cardiology",
+      doc_img: "https://i.ibb.co/b6SDFTN/01.jpg",
+      experience: "10 years experience"
+    },
+    {
+      doc_id: 2,
+      name: "Greg S. Grinstead",
+      specialize: "Neurology",
+      doc_img: "https://i.ibb.co/gW26qY2/02.jpg",
+      experience: "12 years experience"
+    },
+    {
+      doc_id: 3,
+      name: "Roger K. Jackson",
+      specialize: "Orthopedics",
+      doc_img: "https://i.ibb.co/hsyxYVj/03.jpg",
+      experience: "9+ years experience"
+    },
+    {
+      doc_id: 4,
+      name: "Frank T. Grimsley",
+      specialize: "stomach",
+      doc_img: "https://i.ibb.co/86xBJSh/04.jpg",
+      experience: "11+ years experience"
+    },
+    {
+      doc_id: 5,
+      name: "Rudolph V. Spitler",
+      specialize: "Lungs",
+      doc_img: "https://i.ibb.co/hWD7NVx/05.jpg",
+      experience: "8+ years experience"
+    },
+    {
+      doc_id: 6,
+      name: "Erik R. Faulkner",
+      specialize: "Bronchus",
+      doc_img: "https://i.ibb.co/hYWtLy1/06.jpg",
+      experience: "13+ years experience"
+    },
+    {
+      doc_id: 7,
+      name: "Phillip L. Williams",
+      specialize: "Vaccine",
+      doc_img: "https://i.ibb.co/dPtTnys/07.jpg",
+      experience: "7+ years experience"
+    },
+    {
+      doc_id: 8,
+      name: "Johnny R. Atterberry",
+      specialize: "Covid 19",
+      doc_img: "https://i.ibb.co/ypmBR9k/08.jpg",
+      experience: "5+ years experience"
+    },
+    {
+      doc_id: 9,
+      name: "Michael I. Johnson",
+      specialize: "Medecine",
+      doc_img: "https://i.ibb.co/nj8qcCS/09.jpg",
+      experience: "10 years experience"
     }
-  }, [experts]);
+  ];
+  const [ourExperts, setOurExperts] = useState(doctorsData);
 
   return (
     <Box
@@ -47,11 +101,11 @@ const OurExperts = () => {
           We are committed to ensure you the best service
         </Typography>
 
-        {experts?.length > 1 && (
+        {ourExperts.length > 0 ? (
           <Grid container spacing={3}>
-            {ourExperts?.map((experts) => (
+            {ourExperts.map((doctor) => (
               <Grid
-                key={experts.doc_id}
+                key={doctor.doc_id}
                 item
                 xs={12}
                 sm={6}
@@ -78,7 +132,7 @@ const OurExperts = () => {
                   <CardActionArea>
                     <Avatar
                       alt="doctor image"
-                      src={experts?.doc_img}
+                      src={doctor?.doc_img}
                       sx={{
                         width: 256,
                         height: 256,
@@ -86,19 +140,24 @@ const OurExperts = () => {
                       }}
                     />
 
-                    <CardContent sx={{ display: "flex", mx: "auto", my: 2 }}>
+                    <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", mx: "auto", my: 2 }}>
                       <Typography gutterBottom variant="h5" component="div">
-                        Specialist in {experts.specialize}
+                        Specialist in {doctor.specialize}
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        {doctor.experience}
                       </Typography>
                     </CardContent>
                     <Typography gutterBottom variant="h6" component="div">
-                      Dr. {experts.name}
+                      Dr. {doctor.name}
                     </Typography>
                   </CardActionArea>
                 </Card>
               </Grid>
             ))}
           </Grid>
+        ) : (
+          <LinearProgress color="secondary" />
         )}
 
         <Typography sx={{ mx: 2, p: 2, textAlign: "end" }}>

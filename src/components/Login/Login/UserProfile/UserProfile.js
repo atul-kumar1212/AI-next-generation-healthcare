@@ -11,7 +11,7 @@ const UserProfile = () => {
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
                     <Typography component="div" variant="h5">
-                        Welcome to our Hospital, {user.displayName}
+                        Welcome to our NEXT-G HealthCare, {user.displayName}
                     </Typography>
                     <Typography variant="subtitle1" color="text.secondary" component="div">
                         {user.email}

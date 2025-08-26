@@ -39,15 +39,15 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {"Developed with 🖤 by "}
+      {"Developed with 🩵 by "}
       <strong>
         <a
           className="text-style"
-          href="https://akshybhosale.github.io/myshop"
+          href="http://github.com/atul-kumar1212"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Akshay Bhosale
+          Atul Kumar
         </a>{" "}
       </strong>
       {"Copyright ©"}
@@ -94,7 +94,7 @@ const Footer = () => {
                   >
                     <HealingTwoToneIcon color="primary" fontSize="Small" />
                   </Avatar>
-                  HEALTH CARE HOSPITALS
+                    NEXT-G HEALTH CARE 
                 </Typography>
                 <Divider />
               </Box>
@@ -111,11 +111,11 @@ const Footer = () => {
                 </Avatar>
                 <a
                   className="text-style"
-                  href="https://maps.app.goo.gl/Sevtm9BZsQWETPmw9"
+                  href="https://www.google.com/maps/place/Jaunpur,+Uttar+Pradesh/@25.7446866,82.6599244,14z/data=!3m1!4b1!4m6!3m5!1s0x39903a2c93994715:0xf9a9f10dc97322!8m2!3d25.7464145!4d82.6837033!16zL20vMDUzbTFs?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Ahmednagar, Maharashtra-413710.
+                  Jaunpur,Uttar Pradesh.
                 </a>
               </Stack>
 
@@ -132,8 +132,8 @@ const Footer = () => {
                 >
                   <EmailIcon />
                 </Avatar>
-                <a className="text-style" href="mailto:akshay.in72@gmail.com">
-                  akshay.in72@gmail.com
+                <a className="text-style" href="atulkumarbaijapur6@gmail.com">
+                  atulkumarbaijapur6@gmail.com
                 </a>
               </Stack>
 
@@ -147,8 +147,8 @@ const Footer = () => {
                 <Avatar className="avatar" sx={{ mb: 1, bgcolor: pink[500] }}>
                   <CallIcon />
                 </Avatar>
-                <a className="text-style" href="mobile:9657601501">
-                  +91 9657601501
+                <a className="text-style" href="mobile:8299321854">
+                  +91 8299321854
                 </a>
               </Stack>
             </Grid>
@@ -226,7 +226,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Akshay on Instagram
+                  Healthcare on Instagram
                 </a>
               </Stack>
 
@@ -242,11 +242,11 @@ const Footer = () => {
                 </Avatar>
                 <a
                   className="text-style"
-                  href="https://www.linkedin.com/in/akshay72/"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Akshay on LinkedIn
+                  Atul on LinkedIn
                 </a>
               </Stack>
 
@@ -262,11 +262,11 @@ const Footer = () => {
                 </Avatar>
                 <a
                   className="text-style"
-                  href="https://github.com/akshybhosale"
+                  href="http://github.com/atul-kumar1212"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Akshay on GitHub
+                  Atul on GitHub
                 </a>
               </Stack>
             </Grid>

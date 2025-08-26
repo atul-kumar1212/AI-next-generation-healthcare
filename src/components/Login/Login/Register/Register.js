@@ -155,7 +155,7 @@ const Register = () => {
                       to="/login"
                       variant="body2"
                     >
-                      Already have an account? Logini
+                      Already have an account? Login
                     </Link>
                   </Button>
                 </Grid>

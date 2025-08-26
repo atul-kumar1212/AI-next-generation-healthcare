@@ -66,21 +66,22 @@ const Navbar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+              sx={{ mr: 1, display: { xs: "none", md: "flex" } }}
             >
               {" "}
               <MenuItem
-                  bgcolor="primary"
-                  component={HashLink}
-                  smooth
-                  to="/home"
-                >
-              <HealingTwoToneIcon fontSize="large" />
-              Health Care Hospital
+                className="navbar-title-box"
+                bgcolor="primary"
+                component={HashLink}
+                smooth
+                to="/home"
+              >
+                <HealingTwoToneIcon fontSize="large" />
+                NEXT-G HealthCare
               </MenuItem>
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box sx={{ flexGrow: 2 , display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -173,7 +174,7 @@ const Navbar = () => {
               component="div"
               sx={{ flexGrow: 1, pt: 2, display: { xs: "flex", md: "none" } }}
             >
-              <HealingTwoToneIcon fontSize="large" /> Health Care Hospital
+              <HealingTwoToneIcon fontSize="large" />  NEXT-G Healthcare
             </Typography>
             <Box
               sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
@@ -230,16 +231,19 @@ const Navbar = () => {
                   About
                 </Button>
               </HashLink>
+              
               {!user?.email && (
                 <HashLink
                   className="text-style text-style-fullscrn "
                   smooth
                   to="/login#login"
                 >
-                  <Button sx={{ my: 2, color: "white", display: "block" }}>
-                    Login
+                  <Button sx={{ my: 2, color: "white", display: "block",px: 6 }}>
+                     AI chatbot
                   </Button>
                 </HashLink>
+                
+                
               )}
             </Box>
 
