@@ -38,7 +38,7 @@ The Package uses in this project:
                  In the project directory, you can run:
                  
                  git init
-                 git clone git remote add origin https://github.com/atul-kumar1212/AI-next-generation-healthcare.git
+                 git clone https://github.com/atul-kumar1212/AI-next-generation-healthcare.git
                  
                  Install a npm packages and Material UI bootstrapped packages
                  npm start
@@ -52,7 +52,7 @@ The Package uses in this project:
                  The build is minified and the filenames include the hashes.
                  Your app is ready to be deployed!
                  
-                 Deploy YourS project on Netlify
+                 Deploy YourS project on Vercel
                  ai-next-generation-healthcare-mzvmksl9y.vercel.app
                  
                                      
