@@ -1,4 +1,4 @@
-Project Live preivew link "ai-next-generation-healthcare-mzvmksl9y.vercel.app" website This project is based on a Healthcare hospitalsservice in this project and the technology is used here is react js.
+Project Live preivew link-ai-next-generation-healthcare.vercel.app website This project is based on a Healthcare hospitalsservice in this project and the technology is used here is react js.
 
 In this site we have these features and services
 
